@@ -5,8 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalExamSemester1Year2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Budget Planner" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="250"/>
+            <RowDefinition Height="200"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <ListBox x:Name="lbxIncome" Grid.Row="0" Grid.Column="0" Margin="30,30,30,30"/>
+        <ListBox x:Name="lbxExpenses" Grid.Row="0" Grid.Column="1" Margin="30,30,30,30"/>
+        <Label Content="Income" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" Margin="30,0,0,0" VerticalAlignment="Top" Width="90"/>
+        <Label Content="Expenses" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Margin="30,0,0,0" VerticalAlignment="Top" Width="90"/>
+
+        <Label x:Name="lblTotalIncome" Grid.Row="1" Grid.Column="0" Margin="30,0,0,170" HorizontalAlignment="Left" Content="Total Income"/>
+        <Label x:Name="lblCurrentBalance" Grid.Row="1" Grid.Column="0" Margin="30,30,0,140" HorizontalAlignment="Left" Content="Current Balance"/>
+        <Label x:Name="lblSearch" Grid.Row="1" Grid.Column="0" Margin="30,60,0,110" HorizontalAlignment="Left" Content="Search"/>
+        <TextBox x:Name="tbxSearch" HorizontalAlignment="Left" Margin="150,60,0,110" Grid.Row="1" Grid.Column="0" Text="" Width="90" Height="20"/>
+
+        <Label x:Name="lblTotalOutgoing" Grid.Row="1" Grid.Column="1" Margin="30,0,0,170" HorizontalAlignment="Left" Content="Total Outgoings"/>
+
+        <Label x:Name="lblName" Grid.Row="0" Grid.Column="2" Margin="30,30,0,190" HorizontalAlignment="Left" Content="Name"/>
+        <TextBox x:Name="tbxName" HorizontalAlignment="Left" Margin="120,30,0,190" Grid.Row="0" Grid.Column="2" Text="" Width="110" Height="20"/>
+        <Label x:Name="lblDate" Grid.Row="0" Grid.Column="2" Margin="30,60,0,160" HorizontalAlignment="Left" Content="Date"/>
+        <DatePicker x:Name="dpDatePicker"  Grid.Column="2" HorizontalAlignment="Left" Margin="120,60,0,160" Width="110"  Height="30"/>
+        <Label x:Name="lblAmount" Grid.Row="0" Grid.Column="2" Margin="30,90,0,130" HorizontalAlignment="Left" Content="Amount"/>
+        <TextBox x:Name="tbxAmount" HorizontalAlignment="Left" Margin="120,95,0,130" Grid.Row="0" Grid.Column="2" Text="" Width="110" Height="20"/>
+        <RadioButton x:Name="rbIncome" Grid.Row="0" Grid.Column="2" Content="Income" HorizontalAlignment="Left" Margin="30,120,0,100"/>
+        <RadioButton x:Name="rbExpense" Grid.Row="0" Grid.Column="2" Content="Expense" HorizontalAlignment="Left" Margin="120,120,0,100"/>
+        <CheckBox x:Name="cbRecurring" Grid.Row="0" Grid.Column="2" Content="Recurring" HorizontalAlignment="Left" Margin="30,150,0,70"/>
+        <Button x:Name="btnRemove" Grid.Row="0" Grid.Column="2" Content="Remove" HorizontalAlignment="Left" Margin="30,180,0,40" Width="60"/>
+        <Button x:Name="btnAdd" Grid.Row="0" Grid.Column="2" Content="Add" HorizontalAlignment="Left" Margin="120,180,0,40" Width="60"/>
+
+
 
     </Grid>
 </Window>
