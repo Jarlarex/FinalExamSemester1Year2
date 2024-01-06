@@ -38,8 +38,8 @@
         <RadioButton x:Name="rbIncome" Grid.Row="0" Grid.Column="2" Content="Income" HorizontalAlignment="Left" Margin="30,120,0,100"/>
         <RadioButton x:Name="rbExpense" Grid.Row="0" Grid.Column="2" Content="Expense" HorizontalAlignment="Left" Margin="120,120,0,100"/>
         <CheckBox x:Name="cbRecurring" Grid.Row="0" Grid.Column="2" Content="Recurring" HorizontalAlignment="Left" Margin="30,150,0,70"/>
-        <Button x:Name="btnRemove" Grid.Row="0" Grid.Column="2" Content="Remove" HorizontalAlignment="Left" Margin="30,180,0,40" Width="60"/>
-        <Button x:Name="btnAdd" Grid.Row="0" Grid.Column="2" Content="Add" HorizontalAlignment="Left" Margin="120,180,0,40" Width="60"/>
+        <Button x:Name="btnRemove" Grid.Row="0" Grid.Column="2" Content="Remove" HorizontalAlignment="Left" Margin="30,180,0,40" Width="60" Click="btnRemove_Click"/>
+        <Button x:Name="btnAdd" Grid.Row="0" Grid.Column="2" Content="Add" HorizontalAlignment="Left" Margin="120,180,0,40" Width="60" Click="btnAdd_Click"/>
 
 
 
